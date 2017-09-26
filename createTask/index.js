@@ -11,7 +11,7 @@ module.exports = function (context, req) {
   context.log('req.body:' + JSON.stringify(req.body))
   context.log('created task:' + JSON.stringify(task))
 
-  context.outputTask = task
+  context.bindings.outputTask = task
   context.res = {
     status: 200,
     body: "created task " + JSON.stringify(task),

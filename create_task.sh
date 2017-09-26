@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # example usage:
-# user=yarmand task='test task'  time=$(date +%Y-%m-%d %H-%M-%S) tags="['test']" ./create_task.sh
+# user=yarmand task='test task'  time=$(date +'%Y-%m-%d %H-%M-%S') tags="['test']" ./create_task.sh
 
 curl -i \
      -H 'Accept: application/json' \
