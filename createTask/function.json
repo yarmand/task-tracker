@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "documentDB",
+      "name": "outputTask",
+      "databaseName": "tasks",
+      "collectionName": "tasks",
+      "createIfNotExists": false,
+      "connection": "createTask_ConnectionString",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
