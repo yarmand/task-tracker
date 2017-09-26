@@ -5,7 +5,7 @@ module.exports = function (context, req) {
     user: req.body.user,
     task: req.body.task,
     time: req.body.time,
-    tag: req.body.tag,
+    tags: req.body.tags,
   }
   context.log('req' + JSON.stringify(req))
   context.log('req.body:' + JSON.stringify(req.body))
