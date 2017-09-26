@@ -7,12 +7,12 @@ module.exports = function (context, req) {
     time: req.body.time,
     tag: req.body.tag,
   }
-  console.log('created task:' + task)
+  console.log('created task:' + JSON.strigify(task)))
 
   context.outputTask = task
   context.res = {
     status: 200,
-    body: "created task " + task
+    body: "created task " + JSON.strigify(task),
   };
   context.done();
 };
